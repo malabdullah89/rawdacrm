@@ -77,26 +77,28 @@ function NewSub() {
                             </form>
 
                             <br></br>
+                            <hr></hr>
+                            <h5>طريقة الدفع</h5>
+                            
 
-                            <div>
-                                <hr></hr>
-                                <h5>وسيلة الدفع</h5>
-                                
+                            <PaymentSection>
+                               
                                 <label for="male">نقدا
                                 <input type="radio" id="cash" name="payment" value="cash"></input>
                                 <span class="checkmark"></span>
 
                                 </label>
-                                <br></br>
+                               
                                 
-                                <label for="male">K-NET<span><img width="30px" src="https://nalbes.com/assets/icons/Knet.png" /></span>
+                                
+                                <label for="male">K-NET<span><img width="25px" src="https://nalbes.com/assets/icons/Knet.png" /></span>
                                 <input type="radio" id="cash" name="payment" value="cash"></input>
                                 <span class="checkmark"></span>
                                 </label>
-                                <br></br>
+                              
 
-                                <hr></hr>
-                            </div>
+                              
+                            </PaymentSection>
 
                             <button>تسجيل</button>
                         </div>
@@ -160,8 +162,6 @@ const Container = styled.div`
     }
     
     form {
-        
-       
         
         input {
             
@@ -255,4 +255,26 @@ const ServicesMenu = styled.select`
             }
 
 
+`
+
+const PaymentSection = styled.div`
+            margin: auto;
+            
+
+            label {
+                display: flex-inline;
+                justify-content: center;
+                padding: 0px 5px;
+               
+               span {
+                    
+                   
+                  img {
+                    vertical-align:middle
+                    
+                    
+                   
+                  }
+               }
+            }
 `
